@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Aaradhya ❤️</title>
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial,sans-serif;
+  overflow:hidden;
+  color:white;
+  background:#090014;
+}
+
+
+/* =========================
+   SLIDER
+========================= */
+
+.slider{
+  width:100vw;
+  height:100vh;
+  position:relative;
+}
+
+.slide{
+  position:absolute;
+  inset:0;
+  min-height:100vh;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  padding:25px;
+
+  opacity:0;
+  transform:scale(1.08);
+
+  pointer-events:none;
+
+  transition:
+    opacity .8s ease,
+    transform .8s ease;
+}
+
+.slide.active{
+  opacity:1;
+  transform:scale(1);
+  pointer-events:auto;
+}
+
+
+/* =========================
+   BACKGROUNDS
+========================= */
+
+.s1{
+  background:
+  radial-gradient(circle at 20% 20%,#ff7ac8 0,transparent 25%),
+  linear-gradient(135deg,#430047,#ff4f9a);
+}
+
+.s2{
+  background:
+  radial-gradient(circle at 80% 20%,#a78bfa 0,transparent 25%),
+  linear-gradient(135deg,#100044,#7048d9);
+}
+
+.s3{
+  background:
+  radial-gradient(circle at 20% 80%,#ff6b9f 0,transparent 25%),
+  linear-gradient(135deg,#3d001d,#ff4081);
+}
+
+.s4{
+  background:
+  radial-gradient(circle,#00e5d0 0,transparent 30%),
+  linear-gradient(135deg,#002b36,#008f8f);
+}
+
+.s5{
+  background:
+  radial-gradient(circle at 50% 20%,#ffb86c 0,transparent 25%),
+  linear-gradient(135deg,#351000,#f97316);
+}
+
+.s6{
+  background:
+  radial-gradient(circle at 80% 80%,#e879f9 0,transparent 25%),
+  linear-gradient(135deg,#21003f,#a21caf);
+}
+
+.s7{
+  background:
+  radial-gradient(circle at 20% 20%,#4ade80 0,transparent 25%),
+  linear-gradient(135deg,#032513,#15803d);
+}
+
+.s8{
+  background:
+  radial-gradient(circle at 80% 20%,#60a5fa 0,transparent 25%),
+  linear-gradient(135deg,#07143b,#1d4ed8);
+}
+
+.s9{
+  background:
+  radial-gradient(circle at 20% 80%,#f0abfc 0,transparent 25%),
+  linear-gradient(135deg,#35055b,#c026d3);
+}
+
+.s10{
+  background:
+  radial-gradient(circle at 80% 30%,#fb7185 0,transparent 25%),
+  linear-gradient(135deg,#3b1005,#e11d48);
+}
+
+.s11{
+  background:
+  radial-gradient(circle at 50% 20%,#818cf8 0,transparent 25%),
+  linear-gradient(135deg,#01040d,#4338ca);
+}
+
+.s12{
+  background:
+  radial-gradient(circle at 50% 50%,#f472b6 0,transparent 35%),
+  linear-gradient(135deg,#4a0425,#db2777);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.content{
+  width:100%;
+  max-width:560px;
+
+  padding:28px;
+
+  border-radius:30px;
+
+  background:rgba(255,255,255,.08);
+
+  border:1px solid rgba(255,255,255,.2);
+
+  backdrop-filter:blur(14px);
+
+  box-shadow:
+    0 20px 70px rgba(0,0,0,.3);
+
+  animation:contentIn 1s ease;
+}
+
+@keyframes contentIn{
+
+  from{
+    opacity:0;
+    transform:translateY(25px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+
+/* =========================
+   EMOJI
+========================= */
+
+.emoji{
+  font-size:75px;
+
+  animation:
+    float 2.5s infinite ease-in-out;
+
+  margin-bottom:15px;
+
+  filter:
+    drop-shadow(
+      0 0 20px rgba(255,255,255,.4)
+    );
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1{
+  font-size:42px;
+  margin:12px 0;
+}
+
+h2{
+  font-size:29px;
+  margin-bottom:18px;
+}
+
+
+/* =========================
+   PARAGRAPHS
+========================= */
+
+p{
+  font-size:17px;
+  line-height:1.8;
+
+  margin:14px 0;
+
+  color:rgba(255,255,255,.94);
+}
+
+.small{
+  font-size:14px;
+  opacity:.75;
+}
+
+
+/* =========================
+   NAME
+========================= */
+
+.name{
+
+  font-size:48px;
+
+  font-weight:bold;
+
+  background:
+    linear-gradient(
+      90deg,
+      #fff,
+      #ffd1ec,
+      #fff,
+      #ffb3df
+    );
+
+  -webkit-background-clip:text;
+
+  color:transparent;
+
+  background-size:300%;
+
+  animation:shine 3s infinite;
+}
+
+@keyframes shine{
+
+  0%{
+    background-position:0%;
+  }
+
+  50%{
+    background-position:100%;
+  }
+
+  100%{
+    background-position:0%;
+  }
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button{
+
+  border:0;
+
+  border-radius:50px;
+
+  padding:15px 27px;
+
+  margin-top:22px;
+
+  font-size:16px;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
+  background:white;
+
+  color:#710044;
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,.35);
+
+  transition:
+    transform .2s,
+    box-shadow .2s;
+}
+
+button:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:
+    0 12px 35px rgba(255,255,255,.25);
+}
+
+button:active{
+
+  transform:scale(.94);
+
+}
+
+
+/* =========================
+   RAKHI
+========================= */
+
+.rakhi{
+
+  width:165px;
+  height:165px;
+
+  margin:30px auto;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+
+      #fff 0 8%,
+
+      #ffd700 9% 18%,
+
+      #ff4f9a 19% 40%,
+
+      #9333ea 41% 60%,
+
+      transparent 61%
+    );
+
+  box-shadow:
+    0 0 25px #fff,
+    0 0 60px #ff7bc8;
+
+  animation:
+    spin 10s linear infinite,
+    rakhiGlow 2s infinite alternate;
+}
+
+@keyframes rakhiGlow{
+
+  from{
+    filter:brightness(1);
+  }
+
+  to{
+    filter:brightness(1.35);
+  }
+
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+
+  display:grid;
+
+  gap:12px;
+
+  margin-top:20px;
+}
+
+.card{
+
+  padding:17px;
+
+  border-radius:18px;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border:
+    1px solid rgba(255,255,255,.22);
+
+  backdrop-filter:blur(8px);
+
+  transition:
+    transform .3s,
+    background .3s;
+}
+
+.card:hover{
+
+  transform:translateY(-4px);
+
+  background:
+    rgba(255,255,255,.18);
+}
+
+
+/* =========================
+   COUNTDOWN
+========================= */
+
+.count{
+
+  font-size:80px;
+
+  font-weight:bold;
+
+  margin:20px;
+
+  text-shadow:
+    0 0 25px rgba(255,255,255,.8);
+
+  animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+
+  50%{
+    transform:scale(1.15);
+  }
+
+}
+
+
+/* =========================
+   SECRET
+========================= */
+
+.secret{
+
+  padding:28px;
+
+  border-radius:25px;
+
+  background:
+    rgba(255,255,255,.12);
+
+  border:
+    1px solid rgba(255,255,255,.25);
+
+  backdrop-filter:blur(12px);
+
+  box-shadow:
+    inset 0 0 30px rgba(255,255,255,.04);
+}
+
+
+/* =========================
+   PROGRESS
+========================= */
+
+.progress{
+
+  position:fixed;
+
+  top:0;
+  left:0;
+
+  height:4px;
+
+  background:white;
+
+  z-index:999;
+
+  transition:.5s;
+
+  box-shadow:
+    0 0 10px white;
+}
+
+
+/* =========================
+   DOTS
+========================= */
+
+.dots{
+
+  position:fixed;
+
+  bottom:22px;
+
+  left:0;
+
+  width:100%;
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:6px;
+
+  z-index:999;
+}
+
+.dot{
+
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  background:
+    rgba(255,255,255,.4);
+
+  transition:.3s;
+}
+
+.dot.active{
+
+  width:25px;
+
+  border-radius:20px;
+
+  background:white;
+
+  box-shadow:
+    0 0 10px white;
+}
+
+
+/* =========================
+   HEARTS
+========================= */
+
+.heart{
+
+  position:fixed;
+
+  bottom:-40px;
+
+  font-size:25px;
+
+  pointer-events:none;
+
+  z-index:2000;
+
+  animation:
+    rise 5s linear forwards;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+
+  position:fixed;
+
+  top:-15px;
+
+  width:9px;
+  height:9px;
+
+  z-index:2000;
+
+  animation:
+    fall 3s linear forwards;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.star{
+
+  position:fixed;
+
+  width:3px;
+  height:3px;
+
+  background:white;
+
+  border-radius:50%;
+
+  pointer-events:none;
+
+  opacity:.7;
+
+  animation:
+    twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+
+  from{
+    opacity:.15;
+    transform:scale(.5);
+  }
+
+  to{
+    opacity:.9;
+    transform:scale(1.5);
+  }
+
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes float{
+
+  0%,100%{
+    transform:translateY(0);
+  }
+
+  50%{
+    transform:translateY(-15px);
+  }
+
+}
+
+@keyframes spin{
+
+  to{
+    transform:rotate(360deg);
+  }
+
+}
+
+@keyframes rise{
+
+  to{
+
+    transform:
+      translateY(-110vh)
+      rotate(360deg);
+
+    opacity:0;
+  }
+
+}
+
+@keyframes fall{
+
+  to{
+
+    transform:
+      translateY(110vh)
+      rotate(720deg);
+
+    opacity:0;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:500px){
+
+  .content{
+
+    padding:22px;
+
+    max-height:90vh;
+
+    overflow:auto;
+  }
+
+  h1{
+    font-size:34px;
+  }
+
+  h2{
+    font-size:25px;
+  }
+
+  p{
+    font-size:15px;
+  }
+
+  .name{
+    font-size:39px;
+  }
+
+  .emoji{
+    font-size:60px;
+  }
+
+  .rakhi{
+
+    width:135px;
+    height:135px;
+
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- PROGRESS BAR -->
+
+<div
+  class="progress"
+  id="progress">
+</div>
+
+
+<div class="slider">
+
+
+<!-- =========================
+     SLIDE 1
+========================= -->
+
+<section class="slide s1 active">
+
+<div class="content">
+
+<div class="emoji">🎀</div>
+
+<p>Hey Aaradhya...</p>
+
+<h1>
+I made something special for you ❤️
+</h1>
+
+<p>
+Not because I'm the perfect brother...
+because obviously I'm not. 😂
+</p>
+
+<p>
+But because some people deserve
+a little more than just a simple
+"Happy Rakhi".
+</p>
+
+<p>
+So today, you get an entire website. 😎
+</p>
+
+<button onclick="nextSlide()">
+Open Surprise 🎁
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 2
+========================= -->
+
+<section class="slide s2">
+
+<div class="content">
+
+<div class="emoji">💌</div>
+
+<p>
+This little surprise is specially made for
+</p>
+
+<div class="name">
+AARADHYA
+</div>
+
+<p>
+The sister who somehow manages to turn
+ordinary days into completely unpredictable ones. 😂
+</p>
+
+<p>
+Sometimes you're sweet.
+Sometimes you're annoying.
+Sometimes you're both at the exact same time. 😭
+</p>
+
+<p>
+And somehow...
+I wouldn't change that. ❤️
+</p>
+
+<button onclick="nextSlide()">
+Reveal 👀
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 3
+========================= -->
+
+<section class="slide s3">
+
+<div class="content">
+
+<div class="emoji">😎</div>
+
+<h2>
+The Mystery Person Is...
+</h2>
+
+<div class="name">
+PRIYANSHU
+</div>
+
+<p>
+Your brother ❤️
+</p>
+
+<div class="cards">
+
+<div class="card">
+😂 Professional Annoyer
+</div>
+
+<div class="card">
+😭 Part-Time Comedian
+</div>
+
+<div class="card">
+😎 Full-Time Brother
+</div>
+
+</div>
+
+<p>
+And yes...
+I proudly accept all three titles. 😂
+</p>
+
+<button onclick="nextSlide()">
+Continue ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 4
+========================= -->
+
+<section class="slide s4">
+
+<div class="content">
+
+<p>
+A special Rakhi is waiting...
+</p>
+
+<div class="rakhi"></div>
+
+<h2>
+Happy Raksha Bandhan 🪷
+</h2>
+
+<p>
+A Rakhi isn't just a thread.
+It's a reminder that no matter how much
+we argue, tease or annoy each other,
+there will always be a bond between us.
+</p>
+
+<p>
+Years will pass.
+We will grow older.
+Life will change.
+</p>
+
+<p>
+But I hope the bond between us
+always stays strong. ❤️
+</p>
+
+<button onclick="nextSlide()">
+Tie The Rakhi 🎀
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 5
+     AUTOMATIC COUNTDOWN
+========================= -->
+
+<section class="slide s5">
+
+<div class="content">
+
+<div class="emoji">
+⏳
+</div>
+
+<h2>
+Wait...
+</h2>
+
+<p>
+The serious brother message is loading...
+</p>
+
+<div class="count" id="count">
+3
+</div>
+
+<p>
+Get ready Aaradhya 👀
+</p>
+
+<p class="small">
+This slide will continue automatically ❤️
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 6
+========================= -->
+
+<section class="slide s6">
+
+<div class="content">
+
+<div class="emoji">
+😂
+</div>
+
+<h2>
+Sister Starter Pack
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+🍫 "Bhai, just one bite."
+
+<br>
+
+<b>
+Chocolate mysteriously disappears.
+</b>
+
+</div>
+
+<div class="card">
+
+📱 "Give me your phone for 2 minutes."
+
+<br>
+
+<b>
+2 minutes somehow becomes forever.
+</b>
+
+</div>
+
+<div class="card">
+
+😤 Starts an argument.
+
+<br>
+
+<b>
+Still somehow wins the argument.
+</b>
+
+</div>
+
+<div class="card">
+
+😂 Annoys me all day.
+
+<br>
+
+<b>
+But nobody else is allowed to.
+</b>
+
+</div>
+
+</div>
+
+<p>
+This is basically our sibling relationship
+summarized in four cards. 😂
+</p>
+
+<button onclick="nextSlide()">
+Next 😂
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 7
+========================= -->
+
+<section class="slide s7">
+
+<div class="content">
+
+<div class="emoji">
+🌸
+</div>
+
+<h2>
+But Seriously...
+</h2>
+
+<p>
+Behind all the jokes, teasing and random fights,
+there's something I don't say often enough.
+</p>
+
+<p>
+I'm genuinely happy that you're my sister.
+</p>
+
+<p>
+Life changes.
+People grow.
+Things don't always stay the same.
+</p>
+
+<p>
+But I hope one thing never changes:
+the bond we share as brother and sister. ❤️
+</p>
+
+<p>
+No matter how many silly arguments we have,
+you will always be important to me.
+</p>
+
+<button onclick="nextSlide()">
+Keep Reading 🥹
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 8
+========================= -->
+
+<section class="slide s8">
+
+<div class="content">
+
+<div class="emoji">
+✨
+</div>
+
+<h2>
+More Than Just A Sister
+</h2>
+
+<p>
+You're not just someone who shares my family.
+You're someone who has a permanent place
+in my life.
+</p>
+
+<p>
+There will be days when we disagree.
+There will be days when we annoy each other.
+And there will definitely be days
+when you steal my stuff. 😂
+</p>
+
+<p>
+But behind every joke and every fight,
+there is a bond that means much more.
+</p>
+
+<p>
+I'm grateful for all the little moments
+that make our relationship what it is.
+</p>
+
+<button onclick="nextSlide()">
+More ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 9
+========================= -->
+
+<section class="slide s9">
+
+<div class="content">
+
+<div class="emoji">
+💜
+</div>
+
+<h2>
+One Promise
+</h2>
+
+<p>
+No matter how much we grow up,
+I'll always be your brother.
+</p>
+
+<p>
+You don't have to be perfect.
+You don't have to have everything figured out.
+</p>
+
+<p>
+Just keep being yourself,
+keep chasing your dreams,
+and keep smiling.
+</p>
+
+<p>
+Whenever life feels confusing,
+remember that someone is always
+quietly cheering for you.
+</p>
+
+<p>
+Yes...
+that someone is me. ❤️
+</p>
+
+<button onclick="nextSlide()">
+Next ✨
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 10
+========================= -->
+
+<section class="slide s10">
+
+<div class="content">
+
+<div class="emoji">
+🔐
+</div>
+
+<h2>
+Secret Message
+</h2>
+
+<div class="secret">
+
+<p id="secretText">
+There is a message hidden here...
+</p>
+
+<button onclick="revealSecret()">
+Unlock 🔓
+</button>
+
+</div>
+
+<p class="small">
+Okay... this part is actually serious.
+</p>
+
+<button onclick="nextSlide()">
+Continue ❤️
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 11
+========================= -->
+
+<section class="slide s11">
+
+<div class="content">
+
+<div class="emoji">
+🥹
+</div>
+
+<h2>
+Aaradhya, Remember...
+</h2>
+
+<p>
+You can always count on me.
+</p>
+
+<p>
+Even when life gets difficult,
+I hope you never forget
+that you have a brother cheering for you.
+</p>
+
+<p>
+I hope you get everything you work for,
+meet people who genuinely value you,
+and have countless reasons to smile.
+</p>
+
+<p>
+Don't ever forget how special you are
+to the people who love you.
+</p>
+
+<p>
+And whenever you look back at this little website,
+I hope it reminds you that your annoying brother
+actually cares about you a lot. 😂❤️
+</p>
+
+<button onclick="nextSlide()">
+Final Slide 💖
+</button>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SLIDE 12
+========================= -->
+
+<section class="slide s12">
+
+<div class="content">
+
+<div class="emoji">
+🎉
+</div>
+
+<h1>
+Happy Rakhi!
+</h1>
+
+<div class="name">
+AARADHYA ❤️
+</div>
+
+<p>
+To my amazing sister...
+</p>
+
+<p>
+More fights 😂<br>
+More laughter ❤️<br>
+More crazy moments 🤣<br>
+More memories 🥹<br>
+More Rakhis 🎀
+</p>
+
+<p>
+And most importantly...
+more years of being siblings
+and annoying each other. 😂
+</p>
+
+<p>
+No matter where life takes us,
+I'll always be your brother.
+</p>
+
+<p>
+<b>
+Happy Raksha Bandhan, Aaradhya. ❤️
+</b>
+</p>
+
+<p>
+With lots of love,
+</p>
+
+<h2>
+PRIYANSHU 💖
+</h2>
+
+<button onclick="celebrate()">
+Celebrate 🎉
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+
+<!-- DOTS -->
+
+<div
+  class="dots"
+  id="dots">
+</div>
+
+
+<script>
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+let current = 0;
+
+const slides =
+  document.querySelectorAll(".slide");
+
+const dots =
+  document.getElementById("dots");
+
+const progress =
+  document.getElementById("progress");
+
+
+/* =========================
+   COUNTDOWN VARIABLE
+========================= */
+
+let countdownStarted = false;
+
+
+/* =========================
+   CREATE DOTS
+========================= */
+
+slides.forEach((_,i)=>{
+
+  const dot =
+    document.createElement("div");
+
+  dot.className = "dot";
+
+  if(i === 0){
+
+    dot.classList.add("active");
+
+  }
+
+  /*
+    Dots are only indicators.
+    They cannot change slides.
+  */
+
+  dots.appendChild(dot);
+
+});
+
+
+/* =========================
+   SHOW SLIDE
+========================= */
+
+function showSlide(){
+
+  slides.forEach((slide,i)=>{
+
+    slide.classList.toggle(
+      "active",
+      i === current
+    );
+
+  });
+
+
+  document.querySelectorAll(".dot")
+  .forEach((dot,i)=>{
+
+    dot.classList.toggle(
+      "active",
+      i === current
+    );
+
+  });
+
+
+  progress.style.width =
+    ((current + 1) /
+    slides.length *
+    100) + "%";
+
+
+  createHearts(5);
+
+}
+
+
+/* =========================
+   NEXT SLIDE
+========================= */
+
+function nextSlide(){
+
+  if(current < slides.length - 1){
+
+    current++;
+
+    showSlide();
+
+
+    /*
+      Slide 5 is index 4.
+      Start countdown only there.
+    */
+
+    if(current === 4){
+
+      startCountdown();
+
+    }
+
+  }
+
+}
+
+
+/* =========================
+   AUTOMATIC COUNTDOWN
+   ONLY FOR SLIDE 5
+========================= */
+
+function startCountdown(){
+
+  if(countdownStarted)
+    return;
+
+  countdownStarted = true;
+
+  let n = 3;
+
+  const box =
+    document.getElementById("count");
+
+
+  const timer =
+    setInterval(()=>{
+
+      n--;
+
+
+      if(n > 0){
+
+        box.textContent = n;
+
+      }
+
+      else{
+
+        box.textContent = "💖";
+
+        clearInterval(timer);
+
+
+        /*
+          ONLY THE COUNTDOWN SLIDE
+          MOVES AUTOMATICALLY.
+        */
+
+        setTimeout(()=>{
+
+          nextSlide();
+
+        },1000);
+
+      }
+
+    },1000);
+
+}
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function revealSecret(){
+
+  document.getElementById(
+    "secretText"
+  ).innerHTML =
+
+  "Aaradhya ❤️<br><br>" +
+
+  "You may be annoying sometimes 😂..." +
+
+  "<br><br>" +
+
+  "but you're still one of the most special people in my life." +
+
+  "<br><br>" +
+
+  "I might not say it every day," +
+
+  "<br>" +
+
+  "but I'm always going to care about you." +
+
+  "<br><br>" +
+
+  "Never stop smiling. 🥹❤️";
+
+  createHearts(25);
+
+}
+
+
+/* =========================
+   CREATE HEART
+========================= */
+
+function createHeart(){
+
+  const heart =
+    document.createElement("div");
+
+  heart.className = "heart";
+
+
+  const list = [
+
+    "❤️",
+    "💖",
+    "💕",
+    "💗",
+    "💜",
+    "🩷",
+    "✨",
+    "🌸"
+
+  ];
+
+
+  heart.textContent =
+    list[
+      Math.floor(
+        Math.random() *
+        list.length
+      )
+    ];
+
+
+  heart.style.left =
+    Math.random() * 100 + "vw";
+
+
+  heart.style.animationDuration =
+    (3 + Math.random()*3) + "s";
+
+
+  document.body.appendChild(heart);
+
+
+  setTimeout(()=>{
+
+    heart.remove();
+
+  },6000);
+
+}
+
+
+/* =========================
+   HEART BURST
+========================= */
+
+function createHearts(n){
+
+  for(let i=0;i<n;i++){
+
+    setTimeout(
+      createHeart,
+      i * 100
+    );
+
+  }
+
+}
+
+
+/* =========================
+   CREATE STARS
+========================= */
+
+function createStars(){
+
+  for(let i=0;i<45;i++){
+
+    const star =
+      document.createElement("div");
+
+    star.className = "star";
+
+
+    star.style.left =
+      Math.random()*100 + "vw";
+
+
+    star.style.top =
+      Math.random()*100 + "vh";
+
+
+    star.style.animationDelay =
+      Math.random()*2 + "s";
+
+
+    document.body.appendChild(star);
+
+  }
